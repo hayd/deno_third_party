@@ -50,7 +50,7 @@ use std::path::PathBuf;
 /// This function retrieves the user profile folder using `SHGetKnownFolderPath`.
 ///
 /// All the examples on this page mentioning `$HOME` use this behavior.
-/// 
+///
 /// _Note:_ This function's behavior differs from [`std::env::home_dir`],
 /// which works incorrectly on Linux, macOS and Windows.
 ///
@@ -59,7 +59,7 @@ pub fn home_dir() -> Option<PathBuf> {
     sys::home_dir()
 }
 /// Returns the path to the user's cache directory.
-/// 
+///
 /// The returned value depends on the operating system and is either a `Some`, containing a value from the following table, or a `None.
 ///
 /// |Platform | Value                               | Example                      |
